@@ -1,0 +1,43 @@
+
+:root {
+          --color-bg: pink;
+}
+
+section.cards {
+          background: var(--color-bg);
+          width: 80%;
+          margin: 0 auto;
+        
+}
+
+section.cards .container {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 1rem;
+          padding: 3rem;
+}
+section.cards .container .guest__1 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+}
+section.cards .container .guest__1 .card__text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+}
+ img {
+          width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+          section.cards .container {
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    gap: 1rem;
+          }
+          
+}
